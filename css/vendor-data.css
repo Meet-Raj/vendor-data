@@ -1,0 +1,396 @@
+/* vendor-form-style.css */
+.custom-popup-modal,
+#add-vendor-popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  background-color: #00000090;
+  z-index: 999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.custom-popup-modal form::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius:10px;
+}
+div#vendor-table_length {
+    display: none;
+}
+div#vendor-table_info {
+    display: none;
+}
+div#vendor-table_paginate {
+    display: none;
+}
+.cus_vendor_data .attitude {
+    display: none;
+}
+.cus_vendor_data .issues{
+    display: none;
+}
+.cus_vendor_data .referral_code{
+    display: none;
+}
+.cus_vendor_data .additional_comments{
+    display: none;
+}
+table#vendor-table {
+    width: 100% !important;
+}
+ 
+.custom-popup-modal form::-webkit-scrollbar-track {
+  background-color:rgba(28,173, 117,0.2);
+    border-radius:10px;
+}
+ 
+.custom-popup-modal form::-webkit-scrollbar-thumb {
+  background-color: #1cad75;
+  border-radius:10px;
+}
+
+.custom-popup-modal form,
+#add-vendor-popup #add-vendor-form {
+  max-width: 350px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 40px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  overflow: auto;
+  height: 580px;
+  position: relative;
+  border-radius: 10px;
+}
+
+div#vendor-table_filter {
+    display: none;
+}
+
+.custom-popup-modal form .closeModal{
+  position:absolute;
+    content:"";
+  top:5px;
+  right:5px;
+  width:26px;
+  height:26px;
+  font-size:18px;
+  line-height:26px;
+  color: #ffffff;
+  background-color: #00573d;
+  text-align:center;
+  display:inline-block;
+  border-radius: 8px;
+}
+.custom-popup-modal form .closeModal i{font-style:normal !important;}
+
+
+.custom-popup-modal label,
+#add-vendor-popup label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.select2-container.select2-container--default {
+  margin-bottom: 10px !important;
+}
+.select2-container .select2-search--inline .select2-search__field {
+    margin: 0 !important;
+    padding: 10px !important;
+    height: 35px !important;
+    margin-bottom: 0 !important;
+}
+.select2-container .select2-selection--multiple .select2-selection__rendered {
+  margin-left:0 !important;
+}
+.select2-container--default .select2-selection--multiple {
+  border:1px solid rgba(0, 0, 0, 0.2) !important;
+  border-radius:10px !important;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color:#1cad75 !important;
+}
+
+.select2-container--default .select2-selection--multiple .select2-selection__choice {
+  color: #fff; 
+  background-color: #00ae78 !important;
+    border: 1px solid #00ae78 !important;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__display {
+  padding-left: 8px;
+}
+.select2-container--default .select2-selection--multiple .select2-selection__choice__remove {
+  padding: 0px 4px!important;    
+  font-size: 18px !important;
+  line-height: 22px !important;
+  border-radius: 4px !important;
+  height: 100%  ;
+}
+.mp_wrapper input[type=text],
+.custom-popup-modal input,
+.custom-popup-modal textarea,
+.custom-popup-modal select,
+#add-vendor-popup input,
+#add-vendor-popup textarea,
+#add-vendor-popup select {
+  width: 100%;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.custom-popup-modal button,
+#add-vendor-popup button {  
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  font-weight: 600;
+  background-color: #00573d;
+  border: 1px solid #00573d;
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.custom-popup-modal button:hover,
+#add-vendor-popup button:hover {
+  color: #fff;
+  background-color: #1cad75;
+  border-color: #1cad75;
+}
+
+.mepr-competitors-data-wrapper #opencompetitorsform,
+.mepr-vendor-information-wrapper #add-vendor-button,
+.mepr-banned-vendor-wrapper #openVendorForm {  
+  color: #fff;
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  display: block;
+  margin-left: auto;
+  font-weight: 600;
+  background-color: #00573d;
+  border: 1px solid #00573d;  
+  transition: all 0.3s ease-in-out;
+  border-radius: 10px;
+}
+
+.mepr-competitors-data-wrapper #opencompetitorsform:hover,
+.mepr-vendor-information-wrapper #add-vendor-button:hover,
+.mepr-banned-vendor-wrapper #openVendorForm:hover{
+  color: #fff;
+  background-color: #1cad75;
+  border-color: #1cad75;
+}
+
+.data_not_found {
+  padding: 15px;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: center;
+  border: 2px dashed #ccc;
+}
+
+input.text:focus, 
+input.title:focus, 
+input[type=text]:focus, 
+select:focus, 
+textarea:focus {
+  border-color: #00573d;
+}
+a.edit-vendor,
+a.edit-vendor-banned {
+  font-weight:500;
+  color:green !important;
+  display:inline-flex;
+  align-items:center;
+}
+a.delete-vendor,
+a.delete-vendor-banned{
+  font-weight:500;
+  color:red !important;
+  display:inline-flex;
+  align-items:center;
+}
+a.edit-vendor i,
+a.edit-vendor-banned i,
+a.delete-vendor i{
+  font-style:normal !important;
+  margin-right:5px;
+}
+.vendor-form-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.card-tbl {
+  padding: 15px;
+  overflow: hidden;
+  border-radius: 10px;
+  background-color: #FFF;
+  border:1px solid rgba(0, 0, 0, 0.2);
+}
+
+.tbl-responsive {
+  display: block;
+  width: 100%;
+  overflow: scroll;
+  height: calc(100vh - 200px);  
+}
+.tbl-responsive::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    border-radius:10px;
+}
+ 
+.tbl-responsive::-webkit-scrollbar-track {
+  background-color:rgba(28,173, 117,0.2);
+    border-radius:10px;
+}
+ 
+.tbl-responsive::-webkit-scrollbar-thumb {
+  background-color: #1cad75;
+  border-radius:10px;
+}
+
+.custom-tbl {
+  min-width: 1200px !important;
+}
+
+.custom-tbl tr th {
+  background-color:#ededed;
+  color:#333;
+  font-size: 14px;
+  font-weight:bold;
+  text-transform: uppercase;
+  /* border:1px solid #ccc; */
+  padding:15px 10px;
+}
+.custom-tbl tr td {
+  color:#333;
+  font-size: 14px;
+  font-weight:normal;
+  /* border:1px solid #ccc; */
+  padding: 8px 10px;
+}
+.custom-tbl .thead-dark th {
+  background-color: #00573c;
+  border-color: #00573c;
+}
+
+/* .mepr-account-container table td {
+  display:table-cell !important;
+  text-align: left !important;
+}
+.mepr-account-container table tr {
+    margin-bottom: 0 !important;
+    display: inherit !important;
+    border-bottom: 0 !important;
+} */
+
+.site-header .profile-menu__button-group {
+  display:flex;
+  align-items:center;
+}
+
+#mepr-account-nav {
+  padding: 15px;
+}
+
+#mepr-account-nav .mepr-nav-item a {
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.btn-green i {
+  font-style:normal !important;
+}
+.site-header .profile-menu__button {
+  outline: none;
+  border-radius: 10px;
+}
+.site-header .profile-menu__dropdown {
+  position: absolute;
+}
+
+.site-header .dropdown__item, .site-header .dropdown a:focus,
+.site-header .dropdown__item, .site-header .dropdown a:hover  {
+  color: #fff;
+  background-color: #00573d;
+}
+
+.custom-input-group {
+  flex-wrap: nowrap;
+}
+
+.custom-input-group .input-group-text {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  border: 1px solid #00573d;
+  background-color: #00573d;
+  color: #fff;
+}
+.custom-input-group input {
+  margin-bottom: 0 !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 0px !important;
+}
+.custom-input-group .input-group-text i {font-style:normal !important;}
+
+/*****************************************************************************/
+
+@media (max-width: 768px){
+  .site-header .profile-menu {
+    width:100%;
+  }
+  .site-header .profile-menu__button-group {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .site-header .profile-menu__arrow_down {display:none !important;}
+  #mepr-account-nav .mepr-nav-item a {
+    justify-content:flex-start;
+  }
+  .site-header .profile-menu__button {
+    display:flex;
+    align-items:center;
+  }
+  .site-header .profile-menu__button.--is-mobile{
+    height: 40px;
+    background-color: #00573d;
+    border-radius: 8px;
+    outline: none;
+  }
+  .mepr-account-container table thead {
+    display: table-header-group !important;
+  }
+  .mepr-account-container table td {
+    display:table-cell !important;
+    text-align: left !important;
+  }
+  .mepr-account-container table tr {
+    margin-bottom: 0 !important;      
+    border-bottom: 0 !important;
+  }
+
+}
+
